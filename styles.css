@@ -49,26 +49,46 @@ body {
 .topnav .icon {
   display: none;
 }
-.top {
-  display: flex;
-  height: 500px;
-  align-content: center;
-}
-#logo {
-  width: 70%;
-  height: 500px;
-  align-content: center;
-}
 .column {
   float: left;
   padding: 10px;
   height: 100%; /* Should be removed. Only for demonstration */
 }
 
+.logos{
+  width: 65%;
+  font-size: 30px;
+  object-position: center;
+}
+.quote {
+  width: 35%;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Courier New";
+}
+.head:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#logo {
+  width: 100%;
+  height: 500px;
+  align-content: left;
+}
+.column {
+  float: left;
+  padding: 10px;
+  height: 100%; /* Should be removed. Only for demonstration */
+  font-family: "Courier New";
+}
+
 .mission {
   width: 60%;
   font-size: 30px;
   text-align: center;
+  font-family: "Courier New";
 }
 
 .subscription {
@@ -156,7 +176,7 @@ button:hover {
   width: 33%;
   text-align: left;
   font-size: 20px;
-  height: 760px;
+  height: 880px;
   background-color: #FF5754;
 }
 #picOne {
@@ -173,13 +193,13 @@ button:hover {
   width: 34%;
   text-align: left;
   font-size: 20px;
-  height: 760px
+  height: 880px
 }
 .third{
   width: 33%;
   text-align: left;
   font-size: 20px;
-  height: 760px;
+  height: 880px;
   background-color: #FF5754;
 }
 #picThree {
@@ -192,14 +212,8 @@ button:hover {
   display: table;
   clear: both;
 }
-#wrapper {
-
-}
-#main {
-
-}
-#footer {
-
+p {
+  font-family: "Courier New";
 }
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
