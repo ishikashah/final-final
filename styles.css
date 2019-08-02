@@ -11,14 +11,16 @@ body {
   left: 0px;
   width: 100%;
   height: 100%;
-  margin: auto;
+  margin: 0;
 }
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: white;
-  border: 5px solid white;
   overflow: hidden;
-  background-image: linear-gradient(to right, red, white);
+  background-color: #FF5754;
+  border: 5px solid white;
+  position: fixed;
+  width: 100%;
+  top: 0;
 
 }
 
@@ -42,7 +44,7 @@ body {
 /* Add an active class to highlight the current page */
 .topnav a.active {
   background-color: #white;
-  color: red;
+  color: white;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -54,22 +56,38 @@ body {
   padding: 10px;
   height: 100%; /* Should be removed. Only for demonstration */
 }
+/* h2 {
+  border: 5px double black;
+} */
+#title {
+  border: 5px double black;
+  padding-top: 20px
+}
+h1 {
+  border: 5px double black;
+  padding-top: 20px
+}
 
 .logos{
-  width: 65%;
+  width: 60%;
   font-size: 30px;
   object-position: center;
 }
 .quote {
-  width: 35%;
+  width: 40%;
   font-size: 20px;
   text-align: center;
   font-family: "Courier New";
+  border:5px double black;
+  padding-bottom: 10px;
+  background-color: #FF5754;
+  padding-right: 30px;
 }
 .head:after {
   content: "";
   display: table;
   clear: both;
+  padding-right: 20px;
 }
 
 #logo {
@@ -123,7 +141,7 @@ hr {
 
 /* Set a style for all buttons */
 button {
-  background-color: #4CAF50;
+  background-color: #f44336;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -140,7 +158,7 @@ button:hover {
 /* Extra styles for the cancel button */
 .cancelbtn {
   padding: 14px 20px;
-  background-color: #f44336;
+  background-color: #383e40;
 }
 
 /* Float cancel and signup buttons and add an equal width */
@@ -160,17 +178,20 @@ button:hover {
   clear: both;
   display: table;
 }
-
+<!-----stats---->
+.rowOne {
+  background-color: #C0C0C0;
+}
  .column{
   float: left;
   padding: 50px;
   float: left;
-  height: 100%
+  /* height: 100% */
 }
 #labelStat {
   text-align: center;
   padding-bottom: 30px;
-
+  color:black;
 }
 .first {
   width: 33%;
@@ -178,6 +199,7 @@ button:hover {
   font-size: 20px;
   height: 880px;
   background-color: #FF5754;
+
 }
 #picOne {
   width: 100%;
@@ -215,11 +237,281 @@ button:hover {
 p {
   font-family: "Courier New";
 }
+<!-----WHAT YOU CAN DO---->
+.column{
+ float: left;
+ padding: 50px;
+ float: left;
+ height: 100%;
+}
+
+#labelHelp {
+ text-align: center;
+ padding-bottom: 30px;
+ color:black;
+
+}
+.one {
+  color:black;
+ width: 33%;
+ text-align: left;
+ font-size: 20px;
+ height: 880px;
+ background-color: #FF5754;
+}
+
+#a {
+ width: 100%;
+ height: 200px;
+ object-fit: contain;
+}
+#b {
+ width: 100%;
+ height: 200px;
+ object-fit: contain;
+}
+.two{
+ width: 34%;
+ text-align: left;
+ font-size: 20px;
+ height: 880px;
+ background-color: white;
+}
+
+.three{
+ width: 33%;
+ text-align: left;
+ font-size: 20px;
+ height: 880px;
+background-color: #FF5754;
+}
+#c {
+ width: 100%;
+ height: 200px;
+ object-fit: contain;
+}
+#d {
+ width: 100%;
+ height: 200px;
+ object-fit: contain;
+}
+
+/* adding breaks changes all of my styling */
+
+.whatbutton {
+  border: none;
+  border-radius: 8px;
+  color: red;
+  background-color: white;
+  padding: 50px 75px;
+  margin-left: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  font-family: "Heebo";
+}
+
+.petition {
+  border:none;
+  border-radius: 8px;
+  color: red;
+  background-color: white;
+  padding:50px 75px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  font-family: "Heebo";
+}
+
+
+.rowFour:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+p {
+ font-family: "Courier New";
+}
+<!----stories---->
+.column{
+ float: left;
+ padding: 50px;
+ float: left;
+ height: 100%;
+ object-position: center;
+
+}
+
+.firststory {
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: red;
+  padding: 15px 24px;
+  margin-left: 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-family: "Heebo";
+  height: 900px;
+}
+
+.secondstory {
+  border: none;
+  border-radius: 8px;
+  color: red;
+  background-color: white;
+  padding: 15px 24px;
+  margin-left: 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-family: "Heebo";
+  height: 900px;
+}
+
+.thirdstory {
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: red;
+  padding: 15px 24px;
+  margin-left: 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-family: "Heebo";
+
+}
+
+
+
+
+
+#labelNews {
+ text-align: center;
+ padding-bottom: 30px;
+}
+
+.four {
+ width: 33%;
+ text-align: left;
+ font-size: 20px;
+ height: 1000px;
+ background-color: white;
+}
+#x {
+ width: 100%;
+ height: 200px;
+ object-fit: contain;
+ text-align: center;
+}
+#y {
+ width: 100%;
+ height: 200px;
+ object-fit: contain;
+}
+.five{
+ width: 34%;
+ text-align: left;
+ font-size: 20px;
+ height: 1000px;
+ background-color: #FF5754;
+}
+.six{
+ width: 33%;
+ text-align: left;
+ font-size: 20px;
+ height: 1000px;
+ background-color: white;
+}
+#z {
+ width: 100%;
+ height: 200px;
+ object-fit: contain;
+ align-items: center;
+}
+
+
+
+.rowThree:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+p {
+ font-family: "Courier New";
+}
+.group{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+#groupPic {
+  align-items: center;
+  width: 500px;
+  height:300px;
+  object-fit: cover;
+  justify-content: center;
+}
+.columns {
+  float: left;
+  padding: 50px;
+ float: left;
+ height: 100%
+}
+.q {
+color:black;
+ width: 33%;
+ text-align: left;
+ font-size: 20px;
+ height: 450px;
+ border: 7px double black;
+ background-color: #FF5754;
+ text-align: center;
+ font-family: "Courier New";
+}
+.w{
+  color:black;
+ width: 33%;
+ text-align: left;
+ font-size: 20px;
+ height: 450px;
+ border: 7px double black;
+ background-color: #FF5754;
+ text-align: center;
+ font-family: "Courier New";
+}
+.e {
+  color:black;
+ width: 33%;
+ text-align: left;
+ font-size: 20px;
+ height: 450px;
+ border: 7px double black;
+ background-color: #FF5754;
+ text-align: center;
+font-family: "Courier New";
+}
+.rowFive:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
-    float: right;
+    float: none;
     display: block;
+    width: 100%
   }
 }
 
@@ -236,4 +528,25 @@ p {
     display: block;
     text-align: left;
   }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
 }
+
+
+
+a.button{
+     -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    align-self: center;
+}
+  .US{
+    font-size: 80px;
+    text-align: center;
